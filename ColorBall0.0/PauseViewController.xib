@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PauseViewController">
+            <connections>
+                <outlet property="resumeBut" destination="0DI-k4-l2C" id="rMi-hL-yDg"/>
+                <outlet property="view" destination="TuW-7G-HM7" id="wLA-4L-J5h"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="TuW-7G-HM7">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DI-k4-l2C">
+                    <rect key="frame" x="283.5" y="163" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="5Rw-Tl-aX9"/>
+                        <constraint firstAttribute="height" constant="50" id="AYt-jg-fpH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <color key="tintColor" red="0.38823529410000002" green="0.66274509800000003" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="▶︎"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pausing..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iC-w3-PUw">
+                    <rect key="frame" x="283.5" y="50" width="100" height="70"/>
+                    <color key="tintColor" red="0.38823529410000002" green="0.66274509800000003" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="H9r-RV-reU"/>
+                        <constraint firstAttribute="width" constant="100" id="PZz-Q7-2NY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" red="0.38823529410000002" green="0.66274509800000003" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0DI-k4-l2C" firstAttribute="centerX" secondItem="TuW-7G-HM7" secondAttribute="centerX" id="NFl-ln-oq5"/>
+                <constraint firstItem="0DI-k4-l2C" firstAttribute="centerY" secondItem="TuW-7G-HM7" secondAttribute="centerY" id="Yjs-RZ-5OQ"/>
+                <constraint firstItem="0iC-w3-PUw" firstAttribute="centerX" secondItem="TuW-7G-HM7" secondAttribute="centerX" id="m32-Mm-5zC"/>
+                <constraint firstItem="0iC-w3-PUw" firstAttribute="top" secondItem="TuW-7G-HM7" secondAttribute="top" constant="50" id="o8d-6Y-XpN"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="50.5" y="323.5"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tp5-GZ-8Yb">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button"/>
+        </button>
+    </objects>
+</document>

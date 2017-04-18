@@ -1,0 +1,135 @@
+{
+    "wudi":
+    {
+        "color_r": 0.426,
+        "color_g": 0.545,
+        "color_b": 0.714,
+        "onCollision":
+        [
+            {
+                "type": "repeated",
+                "data":
+                {
+                    "startTime": 0,
+                    "repeated": 1,
+                    "interval": 1,
+                    "cmd": "change",
+                    "name": "InvincibleChanger"
+                }
+            },
+            {
+                "type": "repeated",
+                "data":
+                {
+                    "startTime": 5,
+                    "repeated": 1,
+                    "interval": 1,
+                    "cmd": "rollback",
+                    "name": "InvincibleChanger"
+                }
+            }
+        ]
+    },
+    "bianman":
+    {
+        "color_r": 0.635,
+        "color_g": 0.847,
+        "color_b": 0.753,
+        "onCollision":
+        [
+            {
+                "type": "until",
+                "data":
+                {
+                    "startTime": 0,
+                    "endTime": 5,
+                    "cmd": "change",
+                    "name": "SpeedChanger",
+                    "info":
+                    {
+                        "diff": -0.1
+                    }
+                }
+            },
+            {
+                "type": "repeated",
+                "data":
+                {
+                    "startTime": 5.5,
+                    "repeated": 1,
+                    "interval": 1,
+                    "cmd": "rollback",
+                    "name": "SpeedChanger",
+                    "info":
+                    {
+                        "diff": -0.1
+                    }
+                }
+            }
+        ]
+    },
+    "jiamen":
+    {
+        "color_r": 0.988,
+        "color_g": 0.494,
+        "color_b": 0.494,
+        "onCollision":
+        [
+            {
+                "type": "repeated",
+                "data":
+                {
+                    "startTime": 0,
+                    "repeated": 2,
+                    "interval": 1,
+                    "cmd": "create",
+                    "name": "DoorCreater",
+                    "info":
+                    {
+                        "color": 2,
+                        "pos": 0.7,
+                        "speed": 0.2
+                    }
+                }
+            }
+        ]
+    },
+    "bianman2":
+    {
+        "color_r": 0.635,
+        "color_g": 0.847,
+        "color_b": 0.753,
+        "onCreate":
+        [
+            {
+                "type": "until",
+                "data":
+                {
+                    "startTime": 0,
+                    "endTime": 5,
+                    "cmd": "change",
+                    "name": "SpeedChanger",
+                    "info":
+                    {
+                        "target": 0.01
+                    }
+                }
+            },
+            {
+                "type": "repeated",
+                "data":
+                {
+                    "startTime": 5.5,
+                    "repeated": 1,
+                    "interval": 1,
+                    "cmd": "rollback",
+                    "name": "SpeedChanger",
+                    "info":
+                    {
+                        "diff": -0.1
+                    }
+                }
+            }
+        ]
+    },
+}
